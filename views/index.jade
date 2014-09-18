@@ -1,5 +1,130 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+    .container
+      // Brand and toggle get grouped for better mobile display
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(onclick='$("#home0").animatescroll({padding:51,easing:"easeInOutQuad"});') Michael Perreux
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li
+            a#home1-nav(onclick='$("#home1").animatescroll({padding:51,easing:"easeInOutQuad"});') About
+          li
+            a#home2-nav(onclick='$("#home2").animatescroll({padding:51,easing:"easeInOutQuad"});') Skills
+          li
+            a#home3-nav(onclick='$("#home3").animatescroll({padding:51,easing:"easeInOutQuad"});') Portfolio
+          li
+            a#home4-nav(onclick='$("#home4").animatescroll({padding:51,easing:"easeInOutQuad"});') Contact
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='http://github.com/mperreux')
+              i.fa.fa-github.fa-lg
+          li
+            a(href='http://linkedin.com/in/mperreux')
+              i.fa.fa-linkedin.fa-lg
+  section#home0
+    #home0inner
+      .container
+        h1 Michael Perreux
+  section#home1.section
+    .container
+      h1 About Me
+      p Computer Engineering Student at University of Illinois
+      p
+      p Freelance Web Design, Software Engineering, Computer Repair
+      p
+  section#home2.section
+    .container
+      h1 Skills
+      p Node.js
+      p C++
+      p
+      p C
+      p
+      p Assembly
+      p HTML/CSS
+      p
+      p Javascript/Jquery
+      p Python
+      p Java
+  section#home3.section
+    .container
+      h1 Portfolio
+      .row
+        .col-sm-4
+          a(href='http://ais.illinois.edu')
+            img(src='images/ais.png')
+          p AIS at Illinois
+        .col-sm-4
+          img(src='images/english.png')
+          p English at Illinois
+          p
+            i in progress
+        .col-sm-4
+          a(href='http://asianam.illinois.edu')
+            img(src='images/asianam.png')
+          p Asian American Studies at Illinois
+  section#home4.section
+    .container
+      h1 Contact
+      .row
+        p
+          i.fa.fa-envelope.fa-3x
+        p
+          a(href='mailto:mperreux@gmail.com') mperreux@gmail.com
+      .row
+        form#contact(role='form', method='post', action='email.php')
+          .form-group
+            input#name.form-control(type='text', placeholder='Name', name='name', required='')
+          .form-group
+            input#email.form-control(type='email', placeholder='Email', name='email', required='')
+          .form-group
+            textarea#message.form-control(rows='3', placeholder='Message', name='message', required='')
+          .form-group
+            button#submit.btn.btn-primary(type='submit') Send
+          #form-messages.alert
+  footer
+    .container
+      | © 2014 Michael Perreux. All rights reserved.
+  script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+  script(src='/javascripts/bootstrap.min.js')
+  script(src='/javascripts/skrollr.js')
+  script(src='/javascripts/waypoints.min.js')
+  script(src='/javascripts/animatescroll.js')
+  script(src='/javascripts/contact.js')
+  script.
+      var sections = $('section');
+      var navigation_links = $('nav a');
+      sections.waypoint({
+        handler: function (direction) {
+          var active_section;
+          active_section = $(this);
+          if (direction === "up") active_section = active_section.prev();
+            var active_link = $('#' + active_section.attr("id") + '-nav');
+            navigation_links.parent().removeClass("active");
+            active_link.parent().addClass("active");
+          },
+          offset: '10%'
+      });
+  script.
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-50610745-1', 'illinois.edu');
+    ga('send', 'pageview');
+  script.
+    // Init Skrollr
+    var s = skrollr.init({
+      forceHeight:false
+    });
+
+    // Refresh Skrollr after resizing our sections
+    s.refresh($('.homeSlide'));
