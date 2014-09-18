@@ -1,0 +1,135 @@
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@charset "utf-8";
+/* CSS Document */
+#home0 {
+  text-align: center;
+  
+  background: url("../images/nyc.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% -305px;
+  background-size: cover;
+}
+#home0 h1 {
+  color: #fff;
+  text-shadow: 0 0 6px rgba(0,0,0,1);
+  font-family: 'Pacifico', 'Lato', Sans-serif;
+  font-size:60px;
+}
+h1 {
+  font-weight: 300;
+}
+#home0inner {
+  background-color: rgba(0,0,0,0.2);
+	padding: 65px 0;
+	background-image: url("../images/pattern-diagonal.png");
+}
+#home1 {
+  color: #fff;
+  text-align: center;
+  background: #e74c3c;
+}
+a {
+	cursor:pointer;	
+}
+#home1 h1 {
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+}
+#home2 {
+  text-align: center;
+  background: #ecf0f1;
+}
+.section h1 {
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section {
+  padding: 40px 0 80px;
+}
+#home3 {
+  color: #fff;
+  text-align: center;
+  background: #3498db;
+}
+#home3 h1 {
+  text-align: center;
+}
+footer {
+  padding: 32px 0;
+  color: #fff;
+  background: #406678;
+}
