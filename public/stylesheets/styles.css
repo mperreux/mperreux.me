@@ -74,8 +74,8 @@
 /* CSS Document */
 #home0 {
   text-align: center;
-  
-  background: url("../images/nyc.jpg");
+
+  background: url("/images/nyc.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% -305px;
@@ -93,7 +93,7 @@ h1 {
 #home0inner {
   background-color: rgba(0,0,0,0.2);
 	padding: 65px 0;
-	background-image: url("../images/pattern-diagonal.png");
+	background-image: url("/images/pattern-diagonal.png");
 }
 #home1 {
   color: #fff;
@@ -101,7 +101,7 @@ h1 {
   background: #e74c3c;
 }
 a {
-	cursor:pointer;	
+	cursor:pointer;
 }
 #home1 h1 {
   font-weight: 300;
