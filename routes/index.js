@@ -21,7 +21,7 @@ router.post('/contact', function(req, res) {
     from: req.body.name + ' &lt;' + req.body.email + '&gt;',
     to: config.user,
     subject: 'Contact Form submission',
-    text: req.body.message
+    text: 'From: ' + req.body.name + ' <' + req.body.email + '>' + '\nMessage: ' + req.body.message
   }
   transporter.sendMail(mailOptions, function(error, info) {
     if(error) {
