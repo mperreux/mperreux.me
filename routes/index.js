@@ -26,10 +26,10 @@ router.post('/contact', function(req, res) {
   transporter.sendMail(mailOptions, function(error, info) {
     if(error) {
       console.log(error);
-      res.send('An error has occured');
+      res.status(400).send('An error has occured');
     }
     else {
-      res.send('Form submitted sucessfully!')
+      res.status(200).send('Form submitted sucessfully!')
     }
   });
 });

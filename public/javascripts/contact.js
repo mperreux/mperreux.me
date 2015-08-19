@@ -19,7 +19,7 @@ $(function() {
     		type: 'POST',
     		url: $(form).attr('action'),
     		data: formData
-		}).done(function(response) {
+		}).success(function(response) {
     	// Make sure that the formMessages div has the 'success' class.
     		$(formMessages).removeClass('alert-danger');
     		$(formMessages).addClass('alert-success');
