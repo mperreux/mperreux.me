@@ -1,85 +1,89 @@
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+@font-face {
+    font-family: 'CooperHewitt';
+    font-style: normal;
+    src: local('CooperHewitt-Thin'),
+         local('CooperHewitt Thin'),
+         url('../fonts/CooperHewitt-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CooperHewitt-Thin.woff') format('woff'),
+         url('../fonts/CooperHewitt-Thin.svg#svgCooperHewitt') format('svg');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'CooperHewitt';
+    font-style: normal;
+    src: local('CooperHewitt-Light'),
+         local('CooperHewitt Light'),
+         url('../fonts/CooperHewitt-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CooperHewitt-Light.woff') format('woff'),
+         url('../fonts/CooperHewitt-Light.svg#svgCooperHewitt') format('svg');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'CooperHewitt';
+    font-style: normal;
+    src: local('CooperHewitt-Book'),
+         local('CooperHewitt Book'),
+         url('../fonts/CooperHewitt-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CooperHewitt-Book.woff') format('woff'),
+         url('../fonts/CooperHewitt-Book.svg#svgCooperHewitt') format('svg');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'CooperHewitt';
+    font-style: normal;
+    src: local('CooperHewitt-Medium'),
+         local('CooperHewitt Medium'),
+         url('../fonts/CooperHewitt-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CooperHewitt-Medium.woff') format('woff'),
+         url('../fonts/CooperHewitt-Medium.svg#svgCooperHewitt') format('svg');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'CooperHewitt';
+    font-style: normal;
+    src: local('CooperHewitt-Semibold'),
+         local('CooperHewitt Semibold'),
+         url('../fonts/CooperHewitt-Semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CooperHewitt-Semibold.woff') format('woff'),
+         url('../fonts/CooperHewitt-Semibold.svg#svgCooperHewitt') format('svg');
+    font-weight: 600;
+}
 
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+@font-face {
+    font-family: 'CooperHewitt';
+    font-style: normal;
+    src: local('CooperHewitt-Bold'),
+         local('CooperHewitt Bold'),
+         url('../fonts/CooperHewitt-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CooperHewitt-Bold.woff') format('woff'),
+         url('../fonts/CooperHewitt-Bold.svg#svgCooperHewitt') format('svg');
+    font-weight: 700;
+    }
 
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+@font-face {
+    font-family: 'CooperHewitt';
+    font-style: normal;
+    src: local('CooperHewitt-Heavy'),
+         local('CooperHewitt Heavy'),
+         url('../fonts/CooperHewitt-Heavy.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CooperHewitt-Heavy.woff') format('woff'),
+         url('../fonts/CooperHewitt-Heavy.svg#svgCooperHewitt') format('svg');
+    font-weight: 800;
+    }
 
 @charset "utf-8";
 /* CSS Document */
+p {
+  font-family: 'Playfair Display';
+}
 #home0 {
   text-align: center;
 
-  background: url("/images/nyc.jpg");
+  background: url("/images/nyc2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 50% -305px;
-  background-size: cover;
+  background-position: center -526px;
+  background-size: auto 1065px;
 }
 #home0 h1 {
   color: #fff;
@@ -88,42 +92,58 @@
   font-size:60px;
 }
 h1 {
-  font-weight: 300;
+  font-weight: 700;
+  font-family: 'CooperHewitt';
 }
 #home0inner {
   background-color: rgba(0,0,0,0.2);
-	padding: 65px 0;
+	padding: 170px 0;
 	background-image: url("/images/pattern-diagonal.png");
 }
 #home1 {
-  color: #fff;
+  /*color: #fff;*/
   text-align: center;
-  background: #e74c3c;
+  /*background: #e74c3c;*/
 }
 a {
 	cursor:pointer;
 }
 #home1 h1 {
-  font-weight: 300;
-  color: #fff;
+  /*color: #fff;*/
   text-transform: uppercase;
 }
 #home2 {
   text-align: center;
-  background: #ecf0f1;
+  /*background: #ecf0f1;*/
 }
 .section h1 {
-  font-weight: 300;
+  /*font-weight: 300;*/
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 16px;
 }
+.section h1::after {
+  display: block;
+  content: " ";
+  position: absolute;
+  height: 6px;
+  width: 60px;
+  background: #1C71F3;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .section {
-  padding: 40px 0 80px;
+  padding: 40px 0 0px;
 }
 #home3 {
-  color: #fff;
+  /*color: #fff;*/
   text-align: center;
-  background: #3498db;
+  /*background: #3498db;*/
 }
 #home3 h1 {
   text-align: center;
