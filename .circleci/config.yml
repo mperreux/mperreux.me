@@ -1,6 +1,18 @@
 version: 2.0
-deployment:
-  production:
-    branch: master
-    commands:
-      - aws s3 sync static-site/ s3://mperreux --delete
+jobs:
+  deploy:
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: copy to s3
+          command: aws s3 sync static-site/ s3://mperreux --delete
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: master
