@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: copy to s3
-          command: aws s3 sync static-site/ s3://mperreux.me --delete
+          command: aws s3 sync static-site/ s3://mperreux --delete
 workflows:
   version: 2
   build-and-deploy:

@@ -1,13 +1,12 @@
-var express = require('express');
-var router = express.Router();
-var config = require('../config.js');
-var nodemailer = require('nodemailer');
+const express = require('express');
+const router = express.Router();
+const nodemailer = require('nodemailer');
 
-var transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: config.user,
-    pass: config.pass,
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_PASS,
   }
 });
 
@@ -17,7 +16,7 @@ router.get('/', function(req, res) {
 });
 
 router.post('/contact', function(req, res) {
-  var mailOptions = {
+  const mailOptions = {
     from: req.body.name + ' &lt;' + req.body.email + '&gt;',
     to: config.user,
     subject: 'Contact Form submission',
