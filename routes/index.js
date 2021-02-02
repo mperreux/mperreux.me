@@ -18,7 +18,7 @@ router.get('/', function(req, res) {
 router.post('/contact', function(req, res) {
   const mailOptions = {
     from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-    to: config.user,
+    to: process.env.GMAIL_USER,
     subject: 'Contact Form submission',
     text: 'From: ' + req.body.name + ' <' + req.body.email + '>' + '\nMessage: ' + req.body.message
   }
