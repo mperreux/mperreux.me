@@ -53,15 +53,15 @@ block content
         p
           a(href='mailto:mperreux@gmail.com') mperreux@gmail.com
       .row
-        form#contact(role='form', method='post', action='/contact')
+        form#contact(method='post', action='https://formspree.io/f/mwkwjqzn')
           .form-group
             input#name.form-control(type='text', placeholder='Name', name='name', required='')
           .form-group
-            input#email.form-control(type='email', placeholder='Email', name='email', required='')
+            input#email.form-control(type='email', placeholder='Email', name='_replyto', required='')
           .form-group
             textarea#message.form-control(rows='3', placeholder='Message', name='message', required='')
           .form-group
-            button#submit.btn.btn-primary(type='submit') Send
+            button#submit.btn.btn-primary(type='submit', value="Send") Send
           #form-messages.alert
   footer
     .container
